@@ -1,0 +1,826 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<title>Solution: Wah-rcade</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+  
+  <!-- Page specific imports -->
+  
+<meta name="robots" content="noindex">
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/CACHE/css/output.a0de12202051.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css">
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="../static/js/sorttable.fe2a69aebf8c.js"></script>
+  <script src="../static/js/tray.ac18af883297.js"></script>
+  <script src="../static/js/bootstrap.7138c610defd.js"></script>
+  <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+
+  <!-- Page specific imports -->
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
+
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.61e41ee0017b.ico" type="image/vnd.microsoft.icon">
+  
+  
+
+<script type="text/javascript">
+  var csrf_token = "Kqg4Hc1zm2xGz8S3693anwPkFR1o4jqfqjUCmqpjBh3dqzualzoe9QfY7gbLwRoz";
+  var tz_set_endpoint = '/tz_detect/set/';
+  var csrf_header_name = 'x-csrftoken';
+  (function() {
+    var tz_script = document.createElement('script');
+    tz_script.src = '/static/tz_detect/js/tzdetect.min.cbab13600a82.js';
+    tz_script.setAttribute('async', 'true');
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tz_script, s);
+  })();
+</script>
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-4">
+    <div class="container-xxl">
+      <a class="navbar-brand" href="../password-reset.html">
+        <img src="../static/images/logo.a854f7d77317.png" alt="Huntinality" class="max-vw-8 w-px-80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="../password-reset.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link"  href="../about.html">
+              About
+            </a>
+          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link"  href="../puzzle_story/obro.html">
+              Story
+              </a>
+          </li>
+          
+
+          
+            <li class="nav-item">
+              <a class="nav-link active"  href="../puzzles.html">
+              Puzzles
+              </a>
+            </li>
+          
+
+
+          <li class="nav-item">
+            <a class="nav-link"  href="../teams.html">
+            Teams
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"  href="../updates.html">
+            Updates
+            </a>
+          </li>
+
+          
+            <li class="nav-item">
+              <a class="nav-link"  href="../wrapup.html">
+              Wrap-Up
+              </a>
+            </li>
+          
+        </ul>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+              <li class="nav-item"><a class="nav-link" href="../login.html">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="../register.html">Register</a></li>
+            
+        </ul>
+
+      </div>
+
+
+    </div>
+  </nav>
+
+  <div class="container mt-2">
+    <div class="row mb-4">
+
+      <div class="col-auto me-auto">
+        
+<a href="../puzzle/wahrcade.html" class="btn btn-primary">Back to the puzzle</a>
+
+      </div>
+
+      <div class="col-auto ms-auto">
+      
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="container main-container">
+    
+
+<h1>
+    Solution: Wah-rcade
+</h1>
+<h6 class="text-center">
+    <div class="fs-5 text-dark">Answer: <span class="solved-title-answer">CASCADINGSTYLESHEETS</span></div>
+</h6>
+
+<div class="container mb-5">
+    <div class="row justify-content-md-center">
+        <div class="col-11">
+        <div class="text-primary fs-5 fst-italic mb-3">
+            Written by
+            
+Shuxin Zhan
+
+            <br>
+            
+Art: Jamie
+
+        </div>
+
+        
+        <p>Each pixel of each arcade image has a corresponding (R, G, B) tuple where each value represents the strength of the primary color at that pixel. Meanwhile, each of the 3 red, green, and blue cables carries data streams that encode the intensities of that primary color for every pixel in the original image.</p>
+<div class="d-inline-flex"><img src="../static/puzzle_resources/wahrcade/1-3.png" class="me-3 w-50 h-50"><div><p>
+            The world 1-3 arcade image (left) is the original, corresponding to row 3 of the cables fixed at red-green-blue, indicating that red, green, and blue data streams were correctly matched into their respective channels. However, by switching up which data streams go into which channel input, one can come up with similar images with different color patterns.
+        </p><p>
+            This puzzle is solved by figuring out which one of the red, green, or blue data streams was “plugged” into each channel to create the other 13 images.
+        </p></div></div>
+
+<p>Take the world 1-2 image for example:</p>
+<div class="d-inline-flex"><img src="../static/puzzle_resources/wahrcade/1-2.png" class="w-50 h-50 me-3">
+    One can observe that all of the green parts of the original image have stayed green. From this, it can be deduced that the green channel (i.e. the 2nd input) must remain green. The other key observation is that the red parts of the original image have turned pink (a color that is equal parts red and blue). From this, it can be deduced that the red and blue channels (i.e. the 1st and 3rd inputs) must be red (as they must both be equal, and non-zero strength in the original image).
+</div>
+
+<p>Repeating this for all the images and filling in the grid visually spells out the letters CSS, for the answer <b>CASCADING STYLE SHEETS</b>:</p>
+<div class="d-flex justify-content-center mb-3"><img src="../static/puzzle_resources/wahrcade/ksdjf2.png"></div>
+<hr><h4>A code solution</h4>
+
+<p>One concern we had with this puzzle was its solveability for color-blind puzzlers. In the end, we decided to include a note in our FAQs that some puzzles would involve colors and added tooltips to components where recognizing the color was vital to the solve - in this case, the given cables. We hoped that this would make the ah-ha accessible to color-blind puzzlers, even though they would need image editing software or code for the final extraction.</p>
+<p>After the hunt ended, we were delighted to hear that there were puzzlers who took this approach and solved the puzzle despite being colorblind. Thank you to David Glasser of <a href="../teams@team=More&#32;About&#32;Vikings.html">More About Vikings</a> for sharing their code solution!</p>
+<script src="https://gist.github.com/rawxfish/397b9ee0f1d463ffa01081949ad025dd.js"></script>
+
+<p>giving the solution:</p>
+<pre>    World 1-1: RRR
+    World 1-2: RGR
+    World 1-3: RGB
+    World 1-4: RBR
+    World 1-5: RRR
+    World 2-1: GGG
+    World 2-2: GRB
+    World 2-3: GGG
+    World 2-4: BRG
+    World 2-5: GGG
+    World 3-1: BBB
+    World 3-2: BGR
+    World 3-3: BBB
+    World 3-4: GRB
+    World 3-5: BBB
+</pre>
+<hr><h4>CES</h4>
+
+<p>During the hunt, a pretty common mistake was to read CES instead of CSS:</p>
+<div class="my-3"><h5 class="text-center">CSS vs CES/CONSUMERELECTRONICSSHOW</h5><!-- chart --><div class="container justify-content-center w-100"><canvas id="CSSVSCESChart"></canvas><script>
+        var cumulativeCSS = [];
+        var cumulativeCES = [];
+        var currCSS = 0;
+        var currCES = 0;
+
+            currCSS += 0;
+            cumulativeCSS.push({x:"2021-05-29T10:00:00-07:00", y:currCSS});
+
+            currCSS += 6;
+            cumulativeCSS.push({x:"2021-05-29T18:00:00+00:00", y:currCSS});
+
+            currCSS += 21;
+            cumulativeCSS.push({x:"2021-05-29T19:00:00+00:00", y:currCSS});
+
+            currCSS += 13;
+            cumulativeCSS.push({x:"2021-05-29T20:00:00+00:00", y:currCSS});
+
+            currCSS += 19;
+            cumulativeCSS.push({x:"2021-05-29T21:00:00+00:00", y:currCSS});
+
+            currCSS += 8;
+            cumulativeCSS.push({x:"2021-05-29T22:00:00+00:00", y:currCSS});
+
+            currCSS += 7;
+            cumulativeCSS.push({x:"2021-05-29T23:00:00+00:00", y:currCSS});
+
+            currCSS += 4;
+            cumulativeCSS.push({x:"2021-05-30T00:00:00+00:00", y:currCSS});
+
+            currCSS += 5;
+            cumulativeCSS.push({x:"2021-05-30T01:00:00+00:00", y:currCSS});
+
+            currCSS += 9;
+            cumulativeCSS.push({x:"2021-05-30T02:00:00+00:00", y:currCSS});
+
+            currCSS += 6;
+            cumulativeCSS.push({x:"2021-05-30T03:00:00+00:00", y:currCSS});
+
+            currCSS += 8;
+            cumulativeCSS.push({x:"2021-05-30T04:00:00+00:00", y:currCSS});
+
+            currCSS += 5;
+            cumulativeCSS.push({x:"2021-05-30T05:00:00+00:00", y:currCSS});
+
+            currCSS += 6;
+            cumulativeCSS.push({x:"2021-05-30T06:00:00+00:00", y:currCSS});
+
+            currCSS += 6;
+            cumulativeCSS.push({x:"2021-05-30T07:00:00+00:00", y:currCSS});
+
+            currCSS += 9;
+            cumulativeCSS.push({x:"2021-05-30T08:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-30T09:00:00+00:00", y:currCSS});
+
+            currCSS += 4;
+            cumulativeCSS.push({x:"2021-05-30T10:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-30T11:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-30T12:00:00+00:00", y:currCSS});
+
+            currCSS += 3;
+            cumulativeCSS.push({x:"2021-05-30T13:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-30T14:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-30T15:00:00+00:00", y:currCSS});
+
+            currCSS += 3;
+            cumulativeCSS.push({x:"2021-05-30T16:00:00+00:00", y:currCSS});
+
+            currCSS += 3;
+            cumulativeCSS.push({x:"2021-05-30T17:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-30T18:00:00+00:00", y:currCSS});
+
+            currCSS += 5;
+            cumulativeCSS.push({x:"2021-05-30T19:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-30T20:00:00+00:00", y:currCSS});
+
+            currCSS += 5;
+            cumulativeCSS.push({x:"2021-05-30T21:00:00+00:00", y:currCSS});
+
+            currCSS += 4;
+            cumulativeCSS.push({x:"2021-05-30T22:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-30T23:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-31T00:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-31T01:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-31T02:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-31T03:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-31T04:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-31T05:00:00+00:00", y:currCSS});
+
+            currCSS += 3;
+            cumulativeCSS.push({x:"2021-05-31T06:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-31T07:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-31T08:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-31T09:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-31T11:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-31T12:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-31T13:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-31T16:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-05-31T17:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-31T19:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-31T21:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-05-31T22:00:00+00:00", y:currCSS});
+
+            currCSS += 3;
+            cumulativeCSS.push({x:"2021-05-31T23:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-01T00:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-06-01T01:00:00+00:00", y:currCSS});
+
+            currCSS += 3;
+            cumulativeCSS.push({x:"2021-06-01T02:00:00+00:00", y:currCSS});
+
+            currCSS += 3;
+            cumulativeCSS.push({x:"2021-06-01T03:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-01T05:00:00+00:00", y:currCSS});
+
+            currCSS += 4;
+            cumulativeCSS.push({x:"2021-06-01T06:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-01T08:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-01T10:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-01T13:00:00+00:00", y:currCSS});
+
+            currCSS += 3;
+            cumulativeCSS.push({x:"2021-06-01T15:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-01T16:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-01T17:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-01T18:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-01T19:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-01T20:00:00+00:00", y:currCSS});
+
+            currCSS += 3;
+            cumulativeCSS.push({x:"2021-06-01T22:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-06-01T23:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-02T00:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-02T02:00:00+00:00", y:currCSS});
+
+            currCSS += 3;
+            cumulativeCSS.push({x:"2021-06-02T03:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-02T05:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-02T06:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-06-02T07:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-02T10:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-02T11:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-06-02T16:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-02T23:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-03T02:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-06-03T04:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-03T05:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-06-03T07:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-03T19:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-04T01:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-04T05:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-04T09:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-04T10:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-04T11:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-04T13:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-04T16:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-04T23:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-06-05T03:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-05T04:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-05T08:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-05T16:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-05T18:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-05T20:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-06T01:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-06T07:00:00+00:00", y:currCSS});
+
+            currCSS += 2;
+            cumulativeCSS.push({x:"2021-06-06T16:00:00+00:00", y:currCSS});
+
+            currCSS += 1;
+            cumulativeCSS.push({x:"2021-06-06T21:00:00+00:00", y:currCSS});
+
+
+            currCES += 0;
+            cumulativeCES.push({x:"2021-05-29T10:00:00-07:00", y:currCES});
+
+            currCES += 5;
+            cumulativeCES.push({x:"2021-05-29T18:00:00+00:00", y:currCES});
+
+            currCES += 14;
+            cumulativeCES.push({x:"2021-05-29T19:00:00+00:00", y:currCES});
+
+            currCES += 8;
+            cumulativeCES.push({x:"2021-05-29T20:00:00+00:00", y:currCES});
+
+            currCES += 7;
+            cumulativeCES.push({x:"2021-05-29T21:00:00+00:00", y:currCES});
+
+            currCES += 8;
+            cumulativeCES.push({x:"2021-05-29T22:00:00+00:00", y:currCES});
+
+            currCES += 6;
+            cumulativeCES.push({x:"2021-05-29T23:00:00+00:00", y:currCES});
+
+            currCES += 5;
+            cumulativeCES.push({x:"2021-05-30T00:00:00+00:00", y:currCES});
+
+            currCES += 4;
+            cumulativeCES.push({x:"2021-05-30T01:00:00+00:00", y:currCES});
+
+            currCES += 6;
+            cumulativeCES.push({x:"2021-05-30T02:00:00+00:00", y:currCES});
+
+            currCES += 4;
+            cumulativeCES.push({x:"2021-05-30T03:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-30T04:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-05-30T05:00:00+00:00", y:currCES});
+
+            currCES += 5;
+            cumulativeCES.push({x:"2021-05-30T06:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-05-30T07:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-05-30T08:00:00+00:00", y:currCES});
+
+            currCES += 4;
+            cumulativeCES.push({x:"2021-05-30T09:00:00+00:00", y:currCES});
+
+            currCES += 3;
+            cumulativeCES.push({x:"2021-05-30T10:00:00+00:00", y:currCES});
+
+            currCES += 3;
+            cumulativeCES.push({x:"2021-05-30T12:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-05-30T16:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-30T17:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-30T18:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-30T19:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-05-30T20:00:00+00:00", y:currCES});
+
+            currCES += 4;
+            cumulativeCES.push({x:"2021-05-30T23:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-05-31T00:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T01:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T04:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T07:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T11:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T14:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T15:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T16:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-05-31T18:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T19:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T20:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T21:00:00+00:00", y:currCES});
+
+            currCES += 4;
+            cumulativeCES.push({x:"2021-05-31T22:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-05-31T23:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-06-01T02:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-06-01T03:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-01T04:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-01T05:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-01T08:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-01T16:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-06-01T17:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-06-01T19:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-01T20:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-06-01T22:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-06-02T03:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-06-02T06:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-02T11:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-02T16:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-06-02T23:00:00+00:00", y:currCES});
+
+            currCES += 2;
+            cumulativeCES.push({x:"2021-06-03T03:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-03T04:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-03T07:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-03T14:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-04T17:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-05T15:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-06T14:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-06T16:00:00+00:00", y:currCES});
+
+            currCES += 1;
+            cumulativeCES.push({x:"2021-06-07T02:00:00+00:00", y:currCES});
+
+        var ctx = document.getElementById("CSSVSCESChart");
+        var CSSVSCESChart = new Chart(ctx, {
+          responsive: true,
+          maintainAspectRatio: true,
+          type: "scatter",
+          data: {
+            datasets: [
+                {
+                    label: "CSS",
+                    data: cumulativeCSS,
+                    showLine: true,
+                    borderColor: "#4c7cfc", // bootstrap blue
+                    pointBackgroundColor: "#4c7cfc",
+                    backgroundColor: "rgba(0, 0, 0, 0)", // no background
+                    borderWidth: 2,
+                    pointBorderWidth: 1,
+                },
+                {
+                    label: "CES / CONSUMERELECTRONICSSHOW",
+                    data: cumulativeCES,
+                    showLine: true,
+                    borderColor: "#dc3545", // boostrap red
+                    pointBackgroundColor: "#dc3545",
+                    backgroundColor: "rgba(0, 0, 0, 0)", // no background
+                    borderWidth: 2,
+                    pointBorderWidth: 1,
+                },
+            ],
+          },
+          options: {
+            responsive: true,
+            scales: {
+              xAxes: [{
+                type: "time",
+                time: {
+                  unit: "minute",
+                  stepSize: 60,
+                  displayFormats: {
+                    day: "dd",
+                    hour: "dd hA",
+                    minute: "dd h:mm a",
+                  },
+                },
+                ticks: {
+                  maxTicksLimit: 12,
+                },
+              }],
+              yAxes: [{
+                type: "linear",
+                ticks: {
+                  beginAtZero: true,
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: "Submissions",
+                  fontStyle: "bold"
+                },
+              }]
+            },
+            legend: {
+              display: true
+            },
+            tooltips: {
+              callbacks: {
+                // Formats time labels in "dd h:mm a" (e.g., Fr 4:00 pm) format.
+                label: function(tooltipItem, data) {
+                  return tooltipItem.yLabel + " submissions @ " + moment(tooltipItem.xLabel).format("dd h:mm a");
+                },
+              },
+            },
+          }
+        });
+      </script></div></div>
+
+<p>One possible reason is from thinking World 2-2 and World 2-4 were the same. But a more likely reason is from believing that the cables carried <i>colors</i> instead of <i>intensities</i>. This wrong interpretation works for all of the colored in Worlds 2 and 3 <i>except</i> 2-4, because for those only two colors swap while one remains the same. For those three worlds, the color that the original red "MARIO BROS" text becomes is the same as the cable that went into the red socket under the correct interpretation, but this is not the case for World 2-4.</p>
+<div class="row"><div class="col"><figure><img src="../static/puzzle_resources/wahrcade/2-2.png" class="figure-img img-fluid"><figcaption class="figure-caption text-center">2-2 and 3-4: GRB</figcaption></figure></div><div class="col"><figure><img src="../static/puzzle_resources/wahrcade/3-2.png" class="figure-img img-fluid"><figcaption class="figure-caption text-center">3-2: BGR</figcaption></figure></div><div class="col border-start border-primary"><figure><img src="../static/puzzle_resources/wahrcade/2-4.png" class="figure-img img-fluid"><figcaption class="figure-caption text-center">2-4: BRG</figcaption></figure></div></div>
+
+<p>As a result, many teams believed 2-4 to be "GBR" instead of "BRG," giving the solution CES, which also felt thematic.</p>
+<p>This interpretation of cables carrying colors is invalidated by the colored worlds in World 1 (since there cannot be a magenta wire that still gives the "C"), as well as the grayscale images. This ended up being an unexpectedly frequent incorrect answer and became somewhat of a running joke throughout the hunt:</p>
+<p><img src="../static/puzzle_resources/wahrcade/cescescescesces.png" class="w-50"></p>
+
+        
+
+        
+        <hr>
+        <h4>Author&rsquo;s Notes</h4>
+        <p>One of my first and favorite online puzzling events was the <a href="https://docs.google.com/document/d/163xKfUEcCCaIeuRgwa9sc2lRAgsPDZCbwz6TEyFZEJY/edit">Ultraviolet Puzzle Challenge</a>, which had puzzles more visual and abstract than I had seen. So when it came time to writing my first puzzles, my mind drifted to creating something that followed in that style.</p>
+<p>The original plan for the puzzle was grander, but I distilled it to this idea after realizing that the Round 2 puzzle answers would be difficult to portray visually and more complicated ideas would not be appropriate for Round 1. I hope that despite being a pretty straightforward idea with only one big ah-ha, this puzzle's simpleness and visual extraction would still be satisfying.</p>
+<p>The first draft of this puzzle was only the 15 images, without World 1-1 and 1-3 cable configurations (or even the existence of cables) or the grid given. After five or six unsuccessful test solves, I was ready to throw in the towel and declare the idea a lost cause. Luckily, my test solvers had more faith than I did and gave me ideas for making the ah-ha more approachable. The end result ended up being less abstract and probably a bit too easy for puzzlers already familiar with the concept, but hopefully was still interesting to some folks.</p>
+<p>Apologies to my poor test solvers, Anthony, Ryan, Alison, Akira, Dan, Max, and Cardinality Rejects who were subject to the earlier versions of this puzzle. Also apologies to everyone on the hints team who had to reply "please double check world 2-4" many many times. Lastly, a special shout out to Jamie for working with me to figure out the most aesthetic and cleanest display.</p>
+        
+
+        
+
+        
+        </div>
+    </div>
+</div>
+
+
+
+  </div>
+
+  
+</body>
+</html>

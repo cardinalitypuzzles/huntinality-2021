@@ -1,0 +1,316 @@
+main {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+}
+
+h2, h4 {
+  color: inherit;
+  font-family: inherit;
+}
+
+.bg-purple {
+  background-color: #c4a1f8;
+}
+
+.bg-gray {
+  background-color: #cccccc;
+}
+
+button {
+  background-color: #cccccc;
+  border-radius: 10px;
+  border: none;
+  width: 100px;
+  height: 36px;
+  padding: 0px;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.tabbuttons {
+  width: 15%;
+  font-size: min(1vw, 1.5em);
+}
+
+button:hover {
+  background-color: #c4a1f8;
+  transition: 0.5s;
+}
+
+button:active {
+  transition: 0s;
+  /* Scaling button to 0.94 to its original size */
+  transform: scale(0.94);
+  /* Lowering the shadow */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.clickable:active {
+  /* Scaling button to 0.94 to its original size */
+  transform: scale(0.94);
+}
+
+@keyframes fade {
+  0% {opacity:0;}
+  40% {opacity:1;}
+  60% {opacity:1;}
+  100% {opacity:0;}
+}
+
+.disabled {
+  background-color: #808080;
+}
+
+.disabled:hover {
+  background-color: #808080 !important;
+}
+
+.bought {
+  background-color: #c4a1f8;
+}
+
+td {
+  border-bottom: none;
+}
+
+.achievement-table {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 2px;
+  border-collapse: separate;
+}
+
+.achievement-td-locked {
+  background-color: #808080;
+}
+
+.achievement-td-unlocked {
+  background-color: #c4a1f8;
+}
+
+.achievement-td {
+  height: 100px;
+  width: 100px;
+  padding: 0px 0px;
+  text-align: center;
+  line-height: normal;
+  border-radius: 10px;
+  position: relative;
+}
+
+.popup {
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translateX(-50%);
+  border: 3px solid black;
+  width: 500px;
+  background-color: #eeeeee;
+  border-radius: 6px;
+  text-align:center;
+  z-index: 2;
+  color: black;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+.bad-text {
+  color: #cc1166;
+}
+
+.good-text {
+  color: #33cc33;
+}
+
+.large-text {
+  font-size: 18px;
+}
+
+button {
+}
+
+.big-button {
+  width: 300px;
+  height: 120px;
+}
+
+.close-button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  background-color: #cc1166;
+}
+
+.tooltiptext {
+  width: 200px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+  padding: 2px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.achievement-td:hover .tooltiptext {
+  visibility: visible;
+}
+
+#notification-area {
+  height: 0px;
+  overflow: visible;
+}
+
+#answer-notification-area {
+  height: 0px;
+  overflow: visible;
+}
+
+.notification {
+  position: relative;
+  z-index: 1;
+  margin: 6px;
+  padding: 2px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 6px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news-wrapper {
+  width: 80%;
+  height: 28px;
+  border-radius: 5px;
+  border: 2px solid black;
+  overflow: hidden;
+  text-align: left;
+}
+
+.news-line {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+/* tabs */
+.puzzle-group-tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.puzzle-group-tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 0;
+  width: auto;
+}
+
+/* Change background color of buttons on hover */
+.puzzle-group-tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.puzzle-group-tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.puzzle-group-tabcontent {
+  display: none;
+  position: relative;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s;
+}
+
+.card-container {
+  height: 150px;
+}
+
+.card-meta-container {
+  height: 300px;
+}
+
+.card-unlock:hover {
+  background-color: #c4a1f8;
+  transition: 0.5s;
+}
+
+.card-unlock:active {
+  transition: 0s;
+  /* Scaling button to 0.94 to its original size */
+  transform: scale(0.94);
+  /* Lowering the shadow */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.modal {
+  display: block;
+  top: 30%;
+}
+
+.modal .close {
+  width: 36px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+

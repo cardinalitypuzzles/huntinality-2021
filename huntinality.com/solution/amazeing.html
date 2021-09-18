@@ -1,0 +1,616 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<title>Solution: A-maze-ing</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+  
+  <!-- Page specific imports -->
+  
+<meta name="robots" content="noindex">
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/CACHE/css/output.a0de12202051.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css">
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="../static/js/sorttable.fe2a69aebf8c.js"></script>
+  <script src="../static/js/tray.ac18af883297.js"></script>
+  <script src="../static/js/bootstrap.7138c610defd.js"></script>
+  <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+
+  <!-- Page specific imports -->
+  
+
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.61e41ee0017b.ico" type="image/vnd.microsoft.icon">
+  
+  
+
+<script type="text/javascript">
+  var csrf_token = "a4cZVxd2ft58vy2cZOqvf2C3HPDSq3QhQXQxALBMuIBFmZEjeeLz1m2H9eNfSBOB";
+  var tz_set_endpoint = '/tz_detect/set/';
+  var csrf_header_name = 'x-csrftoken';
+  (function() {
+    var tz_script = document.createElement('script');
+    tz_script.src = '/static/tz_detect/js/tzdetect.min.cbab13600a82.js';
+    tz_script.setAttribute('async', 'true');
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tz_script, s);
+  })();
+</script>
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-4">
+    <div class="container-xxl">
+      <a class="navbar-brand" href="../password-reset.html">
+        <img src="../static/images/logo.a854f7d77317.png" alt="Huntinality" class="max-vw-8 w-px-80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="../password-reset.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link"  href="../about.html">
+              About
+            </a>
+          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link"  href="../puzzle_story/obro.html">
+              Story
+              </a>
+          </li>
+          
+
+          
+            <li class="nav-item">
+              <a class="nav-link active"  href="../puzzles.html">
+              Puzzles
+              </a>
+            </li>
+          
+
+
+          <li class="nav-item">
+            <a class="nav-link"  href="../teams.html">
+            Teams
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"  href="../updates.html">
+            Updates
+            </a>
+          </li>
+
+          
+            <li class="nav-item">
+              <a class="nav-link"  href="../wrapup.html">
+              Wrap-Up
+              </a>
+            </li>
+          
+        </ul>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+              <li class="nav-item"><a class="nav-link" href="../login.html">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="../register.html">Register</a></li>
+            
+        </ul>
+
+      </div>
+
+
+    </div>
+  </nav>
+
+  <div class="container mt-2">
+    <div class="row mb-4">
+
+      <div class="col-auto me-auto">
+        
+<a href="../puzzle/amazeing.html" class="btn btn-primary">Back to the puzzle</a>
+
+      </div>
+
+      <div class="col-auto ms-auto">
+      
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="container main-container">
+    
+
+<h1>
+    Solution: A-maze-ing
+</h1>
+<h6 class="text-center">
+    <div class="fs-5 text-dark">Answer: <span class="solved-title-answer">MARATHONRACE</span></div>
+</h6>
+
+<div class="container mb-5">
+    <div class="row justify-content-md-center">
+        <div class="col-11">
+        <div class="text-primary fs-5 fst-italic mb-3">
+            Written by
+            
+Alison Chang & Akira Baruah
+
+            <br>
+            
+Art: Melissa Yuan, Alison Chang, and artists across the internet
+
+        </div>
+
+        
+        <p>This puzzle has a Pokemon theme, hinted by the Pokeball styling of the image
+below the maze, the phrases “very best” and “catch” in flavor text, and the 
+names of the various images.</p>
+<p>Each image refers to a specific form of a Pokemon. A transformation must be 
+applied to each set of three “almost words” to make them into real words. They 
+are as follows (given in alphabetical image/form order, although there is no 
+“official” name for a given form, so sources may differ):</p>
+<table class="table"><thead><tr><th colspan="1" rowspan="1"><p><span>
+       Form
+      </span></p></th><th colspan="1" rowspan="1"><p><span>
+       Pokemon
+      </span></p></th><th colspan="1" rowspan="1"><p><span>
+       Pokedex Number
+      </span></p></th><th colspan="1" rowspan="1"><p><span>
+       Transformation to Valid
+      </span></p></th><th colspan="1" rowspan="1"><p><span>
+       Example
+      </span></p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1"><p><span>
+       Amped
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Toxtricity
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       849
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Remove LOW
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       BELOW -> BE
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Caramel Swirl
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Alcremie
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       869
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Move first letter to end
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       DICELAN -> ICELAND
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Diamond
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Furfrou
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       676
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add K as 2nd letter
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       ORA -> OKRA
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       East Sea
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Gastrodon
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       423
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Cycle letters by 5 to right
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       ECARYAPOTH -> APOTHECARY
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Full Belly
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Morpeko
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       877
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add M as 2nd to last
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       ALBUS -> ALBUMS
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Midnight
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Lycanroc
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       745
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add O to center
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       ALNE -> ALONE
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       No Ice
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Eiscue
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       875
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Remove Is, Cs, Es
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       BICEOURBON -> BOURBON
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Phony
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Sinistea
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       854
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Remove Ts
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       BITRD -> BIRD
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Pirouette
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Meloetta
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       648
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Reverse string
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       AET -> TEA
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Pom Pom
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Oricorio
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       741
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Double last letter
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       BE -> BEE
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Rainy
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Castform
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       351
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add R to the front
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       IGHT -> RIGHT
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Red-striped
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Basculin
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       550
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Interleave 2nd letter throughout rest of word
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       LOCMTR -> LOCOMOTOR
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Shield
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Aegislash
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       681
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Replace As with Ds
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       AOAGE -> DODGE
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Speed
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Deoxys
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       386
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add XY
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       GALA -> GALAXY
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Sunshine
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Cherrim
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       421
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Remove R
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       PRICKLERS -> PICKLES
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       Wash
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Rotom
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       479
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       ROT10
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       LVEOLOBBI -> BLUEBERRY
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       White Flower
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Flabebe
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       669
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add W at position 5
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       ALLO -> ALLOW
+      </span></p></td></tr></tbody></table>
+
+<p>The Pokedex numbers of these 17 Pokemon can also be found along the solve path
+of the maze. The other 20 numbers represent Pokemon that aren’t caught. When
+those are sorted by Pokedex number (clued by “ones I don’t catch” and “sort” in
+flavor text), their first letters spell out TRANSFORM BATTLE TOWER.</p>
+<p>If you take the phrase BATTLETOWER as “where to start” and apply the 17
+transformations in maze-sequence, you reach the answer: MARATHONRACE. The
+Pokeball image provides length checkpoints along the way.</p>
+<table class="table"><thead><tr><th colspan="1" rowspan="1"><p><span>
+       Word
+      </span></p></th><th colspan="1" rowspan="1"><p><span>
+       Number
+      </span></p></th><th colspan="1" rowspan="1"><p><span>
+       Pokemon
+      </span></p></th><th colspan="1" rowspan="1"><p><span>
+       Form
+      </span></p></th><th colspan="1" rowspan="1"><p><span>
+       Transformation
+      </span></p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1"><p><span>
+       BATTLETOWER (11)
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       854
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Sinistea
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Phony
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Remove Ts
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       BALEOWER
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       869
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Alcremie
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Caramel Swirl
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Move first letter to end
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       ALEOWERB
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       875
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Eiscue
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       No Ice
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Remove Is, Cs, Es
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       ALOWRB
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       849
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Toxtricity
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Amped
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Remove LOW
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       ARB (3)
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       676
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Furfrou
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Diamond
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add K as 2nd letter
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       AKRB
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       421
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Cherrim
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Sunshine
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Remove R
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       AKB
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       741
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Oricorio
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Pom Pom
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Double last letter
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       AKBB
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       877
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Morpeko
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Full Belly
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add M as 2nd to last
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       AKBMB (5)
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       681
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Aegislash
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Shield
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Replace As with Ds
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       DKBMB
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       550
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Basculin
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Red-striped
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Interleave 2nd letter throughout rest of word
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       DKBKMKB
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       386
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Deoxys
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Speed
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add XY
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       DKBKMKBXY
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       669
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Flabebe
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       White Flower
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add W at position 5
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       DKBKWMKBXY (10)
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       648
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Meloetta
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Pirouette
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Reverse string
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       YXBKMWKBKD
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       745
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Lycanroc
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Midnight
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add O to center
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       YXBKMOWKBKD
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       351
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Castform
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Rainy
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Add R to the front
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       RYXBKMOWKBKD
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       423
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Gastrodon
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       East Sea
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Cycle letters by 5 to right
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       WKBKDRYXBKMO (12)
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       479
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Rotom
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       Wash
+      </span></p></td><td colspan="1" rowspan="1"><p><span>
+       ROT10
+      </span></p></td></tr><tr><td colspan="1" rowspan="1"><p><span>
+       MARATHONRACE
+      </span></p></td><td colspan="1" rowspan="1"><p><span></span></p></td><td colspan="1" rowspan="1"><p><span></span></p></td><td colspan="1" rowspan="1"><p><span></span></p></td><td colspan="1" rowspan="1"><p><span></span></p></td></tr></tbody></table>
+
+        
+
+        
+        <hr>
+        <h4>Author&rsquo;s Notes</h4>
+        <p>When writing this puzzle, we were tasked with making sure the extraction
+wouldn’t be the common pattern of “take 1 letter from each of X items”. While
+that was initially a tough goal to break into, given the character <a
+href="https://bulbapedia.bulbagarden.net/wiki/Weezing_(Pok%C3%A9mon)"
+target="_blank">Weezing</a>, the Pokemon theme followed naturally.</p>
+<p>At the time of writing this puzzle, Alison had actually never played through a
+complete Pokemon video game (and now knows more about Pokemon via
+solving/writing puzzles than from playing actual games), but Akira told her
+about <a href="https://bulbapedia.bulbagarden.net/wiki/Unown_Mode"
+target="_blank">Unown’s</a> many forms. They were both drawn to the
+transformation theme, how it could play nicely with a word transformation puzzle
+scheme, and how it could lend itself to the goal of “less standard extraction”.
+Whenever possible, the form itself was used as inspiration for how the
+transformation would work: Midnight involves adding an O (the full moon) in the
+center, Shield leads to replacing A(ttack) with D(efense), and Red-striped means
+interleaving/striping the second letter through the word.</p>
+<p>(If we wrote this puzzle all over again with more time and wisdom, we would have 
+wanted all given word examples and all intermediary transformation steps to yield 
+valid words as well, or to tie each transformation rule even more tightly to 
+each Pokemon and its form.)</p>
+<p>The maze was added as a nod to the exploration aspect of Pokemon games, and it
+(along with the puzzle title) tied together nicely with the “runner” / “race”
+aspect of the answer.</p>
+<p>During test solve, some folks were concerned that teams would get stuck if they 
+were missing 1-2 of the transformation rules. We decided to add the Pokeball image 
+for periodic length checkpoints to hopefully help solvers know they were on the 
+right general track or narrow down where things had gone wrong. A number of teams 
+mentioned they never used it to solve, but we also heard from other teams that 
+it was a useful tool. (We also enjoyed the creative ways hint requesters referred 
+to the diagram, including "caterpillar", "centipede", and "snake of circles").</p>
+<p>In an earlier form of the puzzle, half the example transformation words were
+accidentally food-based (due to Alison and Akira implementing this right before
+dinner), leading playtesters to ponder some interesting food combos like “TURNIP
+BLUEBERRY MILK” and “COFFEE APPLE PEAS”. Yum.</p>
+        
+
+        
+
+        
+        </div>
+    </div>
+</div>
+
+
+
+  </div>
+
+  
+</body>
+</html>

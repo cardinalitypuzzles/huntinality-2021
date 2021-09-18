@@ -1,0 +1,274 @@
+/* Smash font */
+@font-face {
+  font-family: "SuperSmashBrothers";
+  src: url("../fonts/FOT-Rodin Pro UB.684cb76a7482.otf") format("opentype");
+}
+
+.puzzle-display-round {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Round 1 */
+
+#round-1 div.puzzle-display-story {
+    position: absolute;
+    top: calc(200/1080 * 100%);
+    left: calc(18/1920 * 100%);
+
+    width: calc(470/1920 * 100%);
+    height: 0px;
+    padding-bottom: calc(182/1920 * 100%);
+
+    background-image: url("../puzzle_resources/puzzle_display/images/r1/hb.14ecf4caf774.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#round-1 div.puzzle-display-story:hover {
+    background-image: url("../puzzle_resources/puzzle_display/images/r1/hb_hover.6ab6a2a62ecc.png");
+}
+
+
+#round-1 img#puzzle-display-bg {
+    user-select: none;
+    pointer-events: none;
+}
+
+#round-1 svg {
+    pointer-events: none;
+    user-select: text;
+}
+
+#round-1 svg:hover {
+    filter: drop-shadow(0px 0 20px #ffd611); /* yellow */
+}
+
+#round-1 polygon {
+    pointer-events: auto;
+}
+
+#round-1 svg foreignObject {
+    transform-origin: center;
+}
+
+#round-1 svg foreignObject p.puzzle_name {
+    font-family: NewSuperMarioFontU;
+    color: #460872; /* dark purple */
+    margin: 0;
+    font-size: 36pt;
+    line-height: 110%;
+    text-align: center;
+    pointer-events: auto;
+}
+
+#round-1 svg foreignObject p.puzzle_answer {
+    margin: 0;
+    color: black; /* yellow */
+    font-size: 18pt;
+    text-align: center;
+    pointer-events: auto;
+    font-weight: bold;
+}
+
+#round-1 #wgs svg foreignObject {
+    x: 7%;
+    y: 62%;
+    width: 80%;
+    height: 40%;
+    transform: rotate(-3deg);
+}
+
+#round-1 #wsp svg foreignObject {
+    x: 10%;
+    y: 60%;
+    width: 86%;
+    height: 40%;
+    overflow: visible;
+    transform: rotate(10deg);
+}
+
+#round-1 #wrc svg foreignObject {
+    x: 3%;
+    y: 75%;
+    width: 97%;
+    height: 30%;
+}
+
+#round-1 #wsk svg foreignObject {
+    x: 7%;
+    y: 67%;
+    width: 85%;
+    height: 30%;
+    overflow: visible;
+    transform: rotate(-20deg);
+}
+
+#round-1 #wsk svg foreignObject p.puzzle_answer {
+    transform: translate(3pt);
+}
+
+#round-1 #www svg foreignObject {
+    x: 5%;
+    y: 70%;
+    width: 85%;
+    height: 30%;
+    overflow: visible;
+    transform: rotate(7deg);
+}
+
+#round-1 #wtb svg foreignObject {
+    x: 9%;
+    y: 70%;
+    width: 80%;
+    height: 20%;
+    overflow: visible;
+    transform: rotate(-10deg);
+}
+
+#round-1 #wlt svg foreignObject {
+    x: 5%;
+    y: 73%;
+    width: 91%;
+    height: 30%;
+}
+
+
+/* Round 2 */
+
+#round-2 div {
+    cursor: url("../puzzle_resources/puzzle_display/images/r2/pointer.1075f449ae2a.png"), pointer;
+}
+
+#round-2 a,
+#round-2 div.feeder-puzzle-image-container,
+#round-2 div.puzzle-display-story {
+    cursor: url("../puzzle_resources/puzzle_display/images/r2/hand.40bf68a7d98b.png"), default;
+}
+
+#round-2 div.puzzle-display-story {
+    position: absolute;
+    top: calc(28/1080 * 100%);
+    left: calc(120/1920 * 100%);
+    width: calc(746/1920 * 100%);
+    height: 0px;
+    padding-bottom: calc(85/1920 * 100%);
+
+    background-image: url("../puzzle_resources/puzzle_display/images/r2/story_tab.102021b598df.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.feeder-puzzle-image-container,
+div.meta-puzzle-image-container,
+div.puzzle-display-text-1,
+div.puzzle-display-text-2 {
+    position: absolute;
+}
+
+#round-2 div.meta-puzzle-image-container {
+    pointer-events: none;
+}
+
+#round-2 .hitbox {
+    pointer-events: auto;
+}
+
+@keyframes blink {
+    50% {
+        border-color: #c4a1f8;
+    }
+}
+
+#round-2 svg.feeder-puzzle-image {
+    display: inline-block;
+    overflow: hidden;
+    border: 1vh solid transparent;
+}
+
+
+#round-2 svg.feeder-puzzle-image.active {
+    animation-name: blink ;
+    animation-duration: 1s ;
+    animation-timing-function: ease-in-out ;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate ;
+    border: 1vh solid #8b3de0;
+}
+
+#round-2 svg.feeder-puzzle-image foreignObject p,
+#round-2 svg.meta-puzzle-image foreignObject p {
+    display: none;
+}
+
+#round-2 svg.meta-puzzle-image {
+    transform-origin: top right;
+}
+
+#round-2 div.puzzle-display-text-1, #round-2 div.puzzle-display-text-2 {
+    top: 73%;
+    width: 23%;
+}
+
+#round-2 div.puzzle-display-text-1 {
+    left: 24%;
+}
+
+#round-2 div.puzzle-display-text-1 .puzzle_name {
+    height: 8rem;
+}
+
+#round-2 div.puzzle-display-text-2 {
+    left: 75%;
+}
+
+#round-2 .puzzle-display-text-1 svg,
+#round-2 .puzzle-display-text-1 svg a,
+#round-2 .puzzle-display-text-2 svg,
+#round-2 .puzzle-display-text-2 svg a {
+    font-family: SuperSmashBrothers !important;
+    color: white;
+    text-decoration-color: white;
+    text-shadow: 3px 3px black;
+    -webkit-text-stroke: 2px black;
+}
+
+#round-2 .puzzle-display-text-1 svg a:hover,
+#round-2 .puzzle-display-text-2 svg a:hover {
+    color: #c4a1f8;
+    text-decoration-color: #c4a1f8;
+}
+
+.puzzle-display-text-container {
+    position: absolute;
+    font-size: 1.5vw;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Round 3 */
+
+#round-3 div.puzzle-display-story {
+    position: absolute;
+    top: calc(19/1080 * 100%);
+    left: calc(583/1920 * 100%);
+
+    width: calc(784/1920 * 100%);
+    height: 0px;
+    padding-bottom: calc(393/1920 * 100%);
+
+    background-image: url("../puzzle_resources/puzzle_display/images/r3/bigbashsiblings.605331082a0d.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#round-3 div.puzzle-display-story:hover,
+#round-3 #wsb svg:hover {
+    filter: drop-shadow(0px 0 20px #ffd611);
+}
+
+

@@ -1,0 +1,504 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<title>Curtain</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+  
+  <!-- Page specific imports -->
+  
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/CACHE/css/output.a0de12202051.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css">
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="static/js/sorttable.fe2a69aebf8c.js"></script>
+  <script src="static/js/tray.ac18af883297.js"></script>
+  <script src="static/js/bootstrap.7138c610defd.js"></script>
+  <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+
+  <!-- Page specific imports -->
+  
+
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="static/images/favicon.61e41ee0017b.ico" type="image/vnd.microsoft.icon">
+  
+  
+
+<script type="text/javascript">
+  var csrf_token = "6zVNnij7HUN6cEyGhTfkxepfVW8541ZBMszl2wHRW9jD35aNwjAojyPTnliswzXV";
+  var tz_set_endpoint = '/tz_detect/set/';
+  var csrf_header_name = 'x-csrftoken';
+  (function() {
+    var tz_script = document.createElement('script');
+    tz_script.src = '/static/tz_detect/js/tzdetect.min.cbab13600a82.js';
+    tz_script.setAttribute('async', 'true');
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tz_script, s);
+  })();
+</script>
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-4">
+    <div class="container-xxl">
+      <a class="navbar-brand" href="password-reset.html">
+        <img src="static/images/logo.a854f7d77317.png" alt="Huntinality" class="max-vw-8 w-px-80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="password-reset.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link"  href="about.html">
+              About
+            </a>
+          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link"  href="puzzle_story/obro.html">
+              Story
+              </a>
+          </li>
+          
+
+          
+            <li class="nav-item">
+              <a class="nav-link"  href="puzzles.html">
+              Puzzles
+              </a>
+            </li>
+          
+
+
+          <li class="nav-item">
+            <a class="nav-link active"  href="teams.html">
+            Teams
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"  href="updates.html">
+            Updates
+            </a>
+          </li>
+
+          
+            <li class="nav-item">
+              <a class="nav-link"  href="wrapup.html">
+              Wrap-Up
+              </a>
+            </li>
+          
+        </ul>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+              <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            
+        </ul>
+
+      </div>
+
+
+    </div>
+  </nav>
+
+  <div class="container mt-2">
+    <div class="row mb-4">
+
+      <div class="col-auto me-auto">
+        
+      </div>
+
+      <div class="col-auto ms-auto">
+      
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="container main-container">
+    
+
+<style>
+.chart {
+    width: 100%;
+    height: 82px;
+    transform: scaleY(-1);
+    margin-bottom: 24px;
+}
+
+.baz {
+    fill: rgba(180, 160, 140, 0.3);
+}
+
+.area {
+    fill: rgb(180, 220, 150);
+}
+
+.bar {
+    stroke: rgba(248, 188, 78, 0.5);
+    stroke-width: 0.5%;
+    fill: none;
+}
+
+.meta {
+    font-style: italic;
+}
+
+.team-members {
+    margin-top: 24px;
+}
+
+@media (min-width: 550px) {
+    .team-members {
+        margin-top: 0;
+    }
+}
+
+.team-member-controls {
+    margin-top: 8px;
+    line-height: 36px;
+}
+
+.team-info-panel h4 {
+    margin-bottom: 0;
+}
+
+.free {
+    color: #aaa;
+}
+
+.free td:last-child:before {
+    content: "(";
+}
+
+.free td:last-child:after {
+    content: ")";
+}
+</style>
+
+<h1 class="mb-4">Curtain</h1>
+
+<div class="team-info-panel">
+    <div class="row">
+        <div class="col-6">
+            <h4>Stats</h4>
+            <div class="stat-entry">Track: <span class="fw-bold">Expert</span></div>
+            
+                <div class="stat-entry">Rank: <span class="fw-bold">26</span></div>
+            
+            <div class="stat-entry">Puzzles solved: <span class="fw-bold">14</span></div>
+            
+        </div>
+        <div class="col-6">
+            <div class="team-members">
+                <h4>Team Members:</h4>
+                <div class="stat-entry">
+                    
+                    lotta, 
+                    
+                    justin, 
+                    
+                    daniel, 
+                    
+                    linus, 
+                    
+                    alex, 
+                    
+                    pesto
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+
+    <!-- chart -->
+    
+    <script id="solveLabels" type="application/json">["Start", "puzzle0", "puzzle1", "puzzle2", "puzzle3", "puzzle4", "puzzle5", "puzzle6", "puzzle7", "puzzle8", "puzzle9", "puzzle10", "puzzle11", "puzzle12", "puzzle13", "Now"]</script>
+    <script id="solveTimes" type="application/json">["2021-05-29T10:00:00-07:00", "2021-05-29T19:21:38.135820+00:00", "2021-05-29T19:47:29.121700+00:00", "2021-05-29T20:27:33.294648+00:00", "2021-05-29T20:45:01.816601+00:00", "2021-05-29T21:36:28.027790+00:00", "2021-05-29T21:39:51.820985+00:00", "2021-05-29T22:21:55.461509+00:00", "2021-05-29T22:40:27.532630+00:00", "2021-05-30T00:01:27.481688+00:00", "2021-05-30T01:25:41.670657+00:00", "2021-05-30T02:11:51.988429+00:00", "2021-05-30T02:25:57.876234+00:00", "2021-05-30T03:22:26.957528+00:00", "2021-05-30T04:12:42.822061+00:00", "2021-05-30T05:12:42.822061+00:00"]</script>
+    <script id="solveCounts" type="application/json">[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 14]</script>
+    <script id="isMeta" type="application/json">[false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false]</script>
+    <div class="container justify-content-center" style="height:45vh; width:60vw">
+      <canvas id="progressChart"></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+      <script>
+        var solveTimes = JSON.parse(document.getElementById("solveTimes").textContent);
+        var solveCounts = JSON.parse(document.getElementById("solveCounts").textContent);
+        var solveDataPoints = [];
+        for (i = 0; i < solveTimes.length; i++) {
+          solveDataPoints.push({x:solveTimes[i], y:solveCounts[i]});
+        };
+
+        var pointBackgroundColors = [];
+        var pointRadii = [];
+        var pointHoverRadii = [];
+        var isMeta = JSON.parse(document.getElementById("isMeta").textContent);
+        for (i = 0; i < isMeta.length; i++) {
+          if (isMeta[i]) {
+            pointBackgroundColors.push("#4c7cfc"); // bootstrap primary (blue)
+            pointRadii.push(6);
+            pointHoverRadii.push(7);
+          } else {
+            pointBackgroundColors.push("rgba(0,0,0,0.1)");
+            pointRadii.push(0);
+            pointHoverRadii.push(0);
+          }
+        }
+
+        var ctx = document.getElementById("progressChart");
+        var progressChart = new Chart(ctx, {
+          type: "scatter",
+          data: {
+            datasets: [
+              { // solves dataset
+                label: "Solved",
+                labels: JSON.parse(document.getElementById("solveLabels").textContent),
+                data: solveDataPoints,
+                showLine: true,
+                steppedLine: true,
+                borderColor: "#67a74a", // boostrap success (green)
+                backgroundColor: "rgba(103, 167, 74, 0.1)", // same color, just translucent
+                borderWidth: 2,
+                pointBorderWidth: 1,
+                pointBackgroundColor: pointBackgroundColors,
+                pointRadius: pointRadii,
+                pointHoverRadius: pointHoverRadii,
+              },
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              xAxes: [{
+                type: "time",
+                time: {
+                  unit: "minute",
+                  stepSize: 15,
+                  displayFormats: {
+                    day: "dd",
+                    hour: "dd hA",
+                    minute: "dd h:mm a",
+                  },
+                },
+                ticks: {
+                  maxTicksLimit: 12,
+                },
+              }],
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true,
+                  // Callback ensures that only integers are used as puzzle count tickmarks.
+                  callback: function(value) {if (value % 1 === 0) {return value;}},
+                  maxTicksLimit: 9,
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: "Puzzles",
+                  fontStyle: "bold"
+                }
+              }]
+            },
+            animation: {
+              duration: 0
+            },
+            legend: {
+              display: false
+            },
+            tooltips: {
+              // Only tooltips for solved metas are displayed.
+              filter: function(tooltipItem, data) {
+                return (tooltipItem.datasetIndex === 0 && isMeta[tooltipItem.index]);
+              },
+              callbacks: {
+                // Formats time labels in "dd h:mm a" (e.g., Fr 4:00 pm) format.
+                label: function(tooltipItem, data) {
+                  var label = data.datasets[0].labels[tooltipItem.index];
+                  return "Meta solve: " + moment(tooltipItem.xLabel).format("dd h:mm a");
+                },
+              },
+            },
+          }
+        });
+      </script>
+    </div>
+    <br/>
+    <br/>
+    
+
+    
+    <table class="sortable table">
+        <col style="width: 40%">
+        <col style="width: 10%">
+        <col style="width: 20%">
+        <col style="width: 10%">
+        <col style="width: 20%">
+        <tr>
+            <th>Puzzle</th>
+            <th>Incorrect guesses</th>
+            <th>Unlock time (local)</th>
+            <th>Time to solve</th>
+            <th>Solve time (local)</th>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Wah-wwa Wia"><a href="puzzle/wahwwa_wia.html">Wah-wwa Wia</a></td>
+            <td>0</td>
+            <td sorttable_customkey="1622343877">05/29 12:04</td>
+            <td sorttable_customkey="1020.240418">17m0s</td>
+            <td sorttable_customkey="1622344898">05/29 12:21</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Wah-rcade"><a href="puzzle/wahrcade.html">Wah-rcade</a></td>
+            <td>0</td>
+            <td sorttable_customkey="1622344898">05/29 12:21</td>
+            <td sorttable_customkey="1550.689814">25m51s</td>
+            <td sorttable_customkey="1622346449">05/29 12:47</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Wah-taburger"><a href="puzzle/wahtaburger.html">Wah-taburger</a></td>
+            <td>1</td>
+            <td sorttable_customkey="1622346450">05/29 12:47</td>
+            <td sorttable_customkey="2403.277539">40m3s</td>
+            <td sorttable_customkey="1622348853">05/29 13:27</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Wah-spkeeping"><a href="puzzle/wahspkeeping.html">Wah-spkeeping</a></td>
+            <td>2</td>
+            <td sorttable_customkey="1622343877">05/29 12:04</td>
+            <td sorttable_customkey="6023.924999">1h40m</td>
+            <td sorttable_customkey="1622349901">05/29 13:45</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Wah-gyu Stakes"><a href="puzzle/wahgyu_stakes.html">Wah-gyu Stakes</a></td>
+            <td>0</td>
+            <td sorttable_customkey="1622343877">05/29 12:04</td>
+            <td sorttable_customkey="9110.143269">2h31m</td>
+            <td sorttable_customkey="1622352988">05/29 14:36</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="META: Wah-llet" class="meta"><a href="puzzle/wahllet.html">META: Wah-llet</a></td>
+            <td>0</td>
+            <td sorttable_customkey="1622349902">05/29 13:45</td>
+            <td sorttable_customkey="3289.522956">54m50s</td>
+            <td sorttable_customkey="1622353191">05/29 14:39</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="The Dating Sim"><a href="puzzle/thedatingsim.html">The Dating Sim</a></td>
+            <td>0</td>
+            <td sorttable_customkey="1622353192">05/29 14:39</td>
+            <td sorttable_customkey="2522.988158">42m3s</td>
+            <td sorttable_customkey="1622355715">05/29 15:21</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Mother Earth"><a href="puzzle/mother_earth.html">Mother Earth</a></td>
+            <td>2</td>
+            <td sorttable_customkey="1622353192">05/29 14:39</td>
+            <td sorttable_customkey="3635.082675">1h0m</td>
+            <td sorttable_customkey="1622356827">05/29 15:40</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="A-maze-ing"><a href="puzzle/amazeing.html">A-maze-ing</a></td>
+            <td>1</td>
+            <td sorttable_customkey="1622353192">05/29 14:39</td>
+            <td sorttable_customkey="8495.036036">2h21m</td>
+            <td sorttable_customkey="1622361687">05/29 17:01</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Beetle of the World"><a href="puzzle/beetle_of_the_world.html">Beetle of the World</a></td>
+            <td>1</td>
+            <td sorttable_customkey="1622361687">05/29 17:01</td>
+            <td sorttable_customkey="5053.856758">1h24m</td>
+            <td sorttable_customkey="1622366741">05/29 18:25</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Juice Factory"><a href="puzzle/juice_factory.html">Juice Factory</a></td>
+            <td>0</td>
+            <td sorttable_customkey="1622355716">05/29 15:21</td>
+            <td sorttable_customkey="13795.506039">3h49m</td>
+            <td sorttable_customkey="1622369511">05/29 19:11</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="LOLO"><a href="puzzle/lolo.html">LOLO</a></td>
+            <td>7</td>
+            <td sorttable_customkey="1622355716">05/29 15:21</td>
+            <td sorttable_customkey="14641.38689">4h4m</td>
+            <td sorttable_customkey="1622370357">05/29 19:25</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="META: O Bro, Where Art Thou" class="meta"><a href="puzzle/obro.html">META: O Bro, Where Art Thou</a></td>
+            <td>0</td>
+            <td sorttable_customkey="1622370358">05/29 19:25</td>
+            <td sorttable_customkey="3388.621257">56m29s</td>
+            <td sorttable_customkey="1622373746">05/29 20:22</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Wah Street Bets" class="meta"><a href="puzzle/wah_street_bets.html">Wah Street Bets</a></td>
+            <td>0</td>
+            <td sorttable_customkey="1622373747">05/29 20:22</td>
+            <td sorttable_customkey="3015.521787">50m16s</td>
+            <td sorttable_customkey="1622376762">05/29 21:12</td>
+        </tr>
+        
+    </table>
+    
+    
+
+
+  </div>
+
+  
+</body>
+</html>
