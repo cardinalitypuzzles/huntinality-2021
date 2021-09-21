@@ -13,6 +13,7 @@
 <title>Check Answer: Wah-taburger</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta name="robots" content="noindex">
 
   
   <!-- Page specific imports -->
@@ -156,7 +157,49 @@
 <h1>Check your answer for Wah-taburger</h1>
 
 <main>
-    <br/>
+
+  <script id="check_answer">
+    window.onload=function() {
+      form = document.getElementsByClassName("form-inline")[0]
+      form.onsubmit=function() {
+        right_answer = "POBOY"
+        partials = {}
+        answer = document.getElementById("id_answer").value
+        answer = normalize_puzzle_answer(answer)
+
+        // Remove solved panel if it exists
+        if (document.contains(document.getElementById("solved-panel"))) {
+          document.getElementById("solved-panel").remove();
+        }
+
+        // Create new solved panel
+        node = document.createElement("div")
+        node.setAttribute("id", "solved-panel")
+        if (answer == right_answer) {
+          node.setAttribute("class", "solved-panel")
+          node.innerHTML = "<h4>Solved!</h4>\n<p>The answer was <b>" + right_answer + "</b>.</p>\n<p><i>Waluigi thought his twist on classic sandwiches would be well-received, but Wario didn't seem to agree. \"Bro, what's in these? Something just tastes... wrong...\" Waluigi explained that he had added a dash of his homemade wasabi-watercress-watermelon sauce to each one. Wario threw his plate in the trash and walked away.</i></p>"
+        } else if (answer in partials) {
+          node.setAttribute("class", "unsolved-panel")
+          node.innerHTML = "<h4>Incorrect!</h4>\n<div class='alert alert-block alert-danger'> <ul class='m-0'> <li>" + partials[answer] + "</li> </ul> </div>"
+        } else {
+          node.setAttribute("class", "unsolved-panel")
+          node.innerHTML = "<h4>Incorrect!</h4>"
+        }
+
+        // Inject it
+        form.parentNode.insertBefore(node, form)
+
+        // Return false to prevent GET request from executing
+        return false;
+      }
+    }
+
+    function normalize_puzzle_answer(answer) {
+      return answer.toUpperCase().replace(/[^A-Z]/g, "")
+    }
+  </script>
+
+  <br/>
     
 
     
