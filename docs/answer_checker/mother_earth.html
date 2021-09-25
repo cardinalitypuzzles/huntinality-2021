@@ -13,6 +13,7 @@
 <title>Check Answer: Mother Earth</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta name="robots" content="noindex">
 
   
   <!-- Page specific imports -->
@@ -37,6 +38,7 @@
   <script src="../static/js/sorttable.fe2a69aebf8c.js"></script>
   <script src="../static/js/tray.ac18af883297.js"></script>
   <script src="../static/js/bootstrap.7138c610defd.js"></script>
+  <script src="../static/js/answer_checker.js"></script>
   <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 
 
@@ -156,7 +158,13 @@
 <h1>Check your answer for Mother Earth</h1>
 
 <main>
-    <br/>
+  <script id="check_answer">
+    window.onload = answer_checker_fn(
+        "EVERYDAYMAMA",
+        {},
+        "Doshin");
+  </script>
+  <br/>
     
 
     

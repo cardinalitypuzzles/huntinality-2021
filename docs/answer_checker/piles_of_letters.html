@@ -13,6 +13,7 @@
 <title>Check Answer: Piles of Letters</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta name="robots" content="noindex">
 
   
   <!-- Page specific imports -->
@@ -37,6 +38,7 @@
   <script src="../static/js/sorttable.fe2a69aebf8c.js"></script>
   <script src="../static/js/tray.ac18af883297.js"></script>
   <script src="../static/js/bootstrap.7138c610defd.js"></script>
+  <script src="../static/js/answer_checker.js"></script>
   <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 
 
@@ -156,7 +158,19 @@
 <h1>Check your answer for Piles of Letters</h1>
 
 <main>
-    <br/>
+  <script id="check_answer">
+    window.onload = answer_checker_fn(
+        "TOMAHAWKHAMMER",
+        {
+          "TOMAHAWK" : "Great! That is one of the weapons Waluigi has in his bag.",
+          "HAMMER" : "Great! That is one of the weapons Waluigi has in his bag.",
+          "HAMMERTOMAHAWK" : "You have the right weapons, but the wrong order.",
+          "TOMAHAWKANDHAMMER" : "You have the right weapons, just remove the conjunction.",
+          "HAMMERANDTOMAHAWK" : "You have the right weapons, but the wrong order. Also, remove the conjunction.",
+        },
+        "Hilda");
+  </script>
+  <br/>
     
 
     
