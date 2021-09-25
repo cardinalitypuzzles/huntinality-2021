@@ -13,6 +13,7 @@
 <title>Check Answer: Wah-wwa Wia</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta name="robots" content="noindex">
 
   
   <!-- Page specific imports -->
@@ -156,7 +157,49 @@
 <h1>Check your answer for Wah-wwa Wia</h1>
 
 <main>
-    <br/>
+
+  <script id="check_answer">
+    window.onload=function() {
+      form = document.getElementsByClassName("form-inline")[0]
+      form.onsubmit=function() {
+        right_answer = "PIRATESOFPENZANCE"
+        partials = {}
+        answer = document.getElementById("id_answer").value
+        answer = normalize_puzzle_answer(answer)
+
+        // Remove solved panel if it exists
+        if (document.contains(document.getElementById("solved-panel"))) {
+          document.getElementById("solved-panel").remove();
+        }
+
+        // Create new solved panel
+        node = document.createElement("div")
+        node.setAttribute("id", "solved-panel")
+        if (answer == right_answer) {
+          node.setAttribute("class", "solved-panel")
+          node.innerHTML = "<h4>Solved!</h4>\n<p>The answer was <b>" + right_answer + "</b>.</p>\n<p><i>Waluigi wasn't a big fan of musical theater, but he did think it'd be a way to make a quick buck off a tourist or two. Sadly, it seemed that Waluigi's performers were really bad at memorizing their lines.</i></p>"
+        } else if (answer in partials) {
+          node.setAttribute("class", "unsolved-panel")
+          node.innerHTML = "<h4>Incorrect!</h4>\n<div class='alert alert-block alert-danger'> <ul class='m-0'> <li>" + partials[answer] + "</li> </ul> </div>"
+        } else {
+          node.setAttribute("class", "unsolved-panel")
+          node.innerHTML = "<h4>Incorrect!</h4>"
+        }
+
+        // Inject it
+        form.parentNode.insertBefore(node, form)
+
+        // Return false to prevent GET request from executing
+        return false;
+      }
+    }
+
+    function normalize_puzzle_answer(answer) {
+      return answer.toUpperCase().replace(/[^A-Z]/g, "")
+    }
+  </script>
+
+  <br/>
     
 
     

@@ -13,10 +13,11 @@
 <title>Check Answer: A-maze-ing</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta name="robots" content="noindex">
 
-  
+
   <!-- Page specific imports -->
-  
+
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -41,21 +42,21 @@
 
 
   <!-- Page specific imports -->
-  
+
 
   <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.61e41ee0017b.ico" type="image/vnd.microsoft.icon">
-  
-  
+
+
 
 <script type="text/javascript">
   var csrf_token = "RfnYhwyOr1OZnWS8O5YI0YJYATV40iEYx81wWKWyGgkwenuf3vjMMi9C2i5rsQCi";
-  var tz_set_endpoint = '/tz_detect/set/';
-  var csrf_header_name = 'x-csrftoken';
+  var tz_set_endpoint = "/tz_detect/set/";
+  var csrf_header_name = "x-csrftoken";
   (function() {
-    var tz_script = document.createElement('script');
-    tz_script.src = '/static/tz_detect/js/tzdetect.min.cbab13600a82.js';
-    tz_script.setAttribute('async', 'true');
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tz_script, s);
+    var tz_script = document.createElement("script");
+    tz_script.src = "/static/tz_detect/js/tzdetect.min.cbab13600a82.js";
+    tz_script.setAttribute("async", "true");
+    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(tz_script, s);
   })();
 </script>
 
@@ -82,21 +83,21 @@
               About
             </a>
           </li>
-          
+
             <li class="nav-item">
               <a class="nav-link"  href="../puzzle_story/obro.html">
               Story
               </a>
           </li>
-          
 
-          
+
+
             <li class="nav-item">
               <a class="nav-link active"  href="../puzzles.html">
               Puzzles
               </a>
             </li>
-          
+
 
 
           <li class="nav-item">
@@ -111,18 +112,18 @@
             </a>
           </li>
 
-          
+
             <li class="nav-item">
               <a class="nav-link"  href="../wrapup.html">
               Wrap-Up
               </a>
             </li>
-          
+
         </ul>
 
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          
-            
+
+
         </ul>
 
       </div>
@@ -135,13 +136,13 @@
     <div class="row mb-4">
 
       <div class="col-auto me-auto">
-        
+
 <a href="../puzzle/amazeing.html" class="btn btn-primary">Back to the puzzle</a>
 
       </div>
 
       <div class="col-auto ms-auto">
-      
+
       </div>
 
 
@@ -151,11 +152,56 @@
   </div>
 
   <div class="container main-container">
-    
+
 
 <h1>Check your answer for A-maze-ing</h1>
 
 <main>
+
+  <script id="check_answer">
+    window.onload=function() {
+      form = document.getElementsByClassName("form-inline")[0]
+      form.onsubmit=function() {
+        right_answer = "MARATHONRACE"
+        partials = {
+          "TRANSFORMBATTLETOWER" : "Keep going!"
+        }
+        answer = document.getElementById("id_answer").value
+        answer = normalize_puzzle_answer(answer)
+
+        // Remove solved panel if it exists
+        if (document.contains(document.getElementById("solved-panel"))) {
+          document.getElementById("solved-panel").remove();
+        }
+
+        // Create new solved panel
+        node = document.createElement("div")
+        node.setAttribute("id", "solved-panel")
+        if (answer == right_answer) {
+          node.setAttribute("class", "solved-panel")
+          node.innerHTML = "<h4>Solved!</h4>\n<p>The answer was <b>" + right_answer + "</b>.</p>\n<p><i>Weezing has joined the battle!</i></p>"
+        } else if (answer in partials) {
+          node.setAttribute("class", "unsolved-panel")
+          node.innerHTML = "<h4>Incorrect!</h4>\n<div class='alert alert-block alert-danger'> <ul class='m-0'> <li>" + partials[answer] + "</li> </ul> </div>"
+        } else {
+          node.setAttribute("class", "unsolved-panel")
+          node.innerHTML = "<h4>Incorrect!</h4>"
+        }
+
+        // Inject it
+        form.parentNode.insertBefore(node, form)
+
+        // Return false to prevent GET request from executing
+        return false;
+      }
+    }
+
+    function normalize_puzzle_answer(answer) {
+      return answer.toUpperCase().replace(/[^A-Z]/g, "")
+    }
+  </script>
+
+
     <br/>
     
 
