@@ -39,6 +39,8 @@
   <script src="../static/js/sorttable.fe2a69aebf8c.js"></script>
   <script src="../static/js/tray.ac18af883297.js"></script>
   <script src="../static/js/bootstrap.7138c610defd.js"></script>
+  <script src="../static/js/answer_checker.js"></script>
+  <script src="../static/js/wahgyu_stakes_move_checker.js"></script>
   <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 
 
@@ -180,7 +182,7 @@
         <div class="row text-center"><div class="col-2"><img class="w-100 max-vw-20" src="../static/puzzle_resources/wahgyu_stakes/puzzle_hunter.abe424ea2565.png"></div><div class="col-8"><div class="m-5 it">
         Waluigi once hosted a high-end, high stakes puzzle hunt. Unfortunately, the Mushroom Kingdom is vegetarian, so he recruited writers from the Kingdom next door that match his loathsomeness.
     </div></div><div class="col-2"><img class="w-100 max-vw-20 flip" src="../static/puzzle_resources/wahgyu_stakes/puzzle_hunter.abe424ea2565.png"></div></div>
-<div class="row text-center justify-content-center"><div class="col-8"><table class="w-100"><tbody><tr><td id="combat_header"><b>Combat!</b></tr></tr><tr><td id="combat_body"><figure><img class="w-25 p-3 mx-auto align-middle" src="../static/puzzle_resources/wahgyu_stakes/puzzle_monster.ee972fe36906.png" ><figcaption class="d-inline align-middle">You're fighting this puzzle</figcaption></figure><form action="https://huntinality.com/puzzle_endpoint/wahgyu_stakes/move_form" method="POST" id="move_form" class="mb-3"><input type="hidden" name="csrfmiddlewaretoken" value="AiTyQV1M1l4koL2JrMlHneVOPrXIjTsEgbx6v9pwgAARfcEQGcGL9ylshQ75LrqY"><input type="text" name="move" required id="id_move"><input type="submit" value="Use Move"></form><div class="mb-2 text-center"><div id="move_response"></div></div></td></tr></tbody></table></div></div>
+<div class="row text-center justify-content-center"><div class="col-8"><table class="w-100"><tbody><tr><td id="combat_header"><b>Combat!</b></tr></tr><tr><td id="combat_body"><figure><img class="w-25 p-3 mx-auto align-middle" src="../static/puzzle_resources/wahgyu_stakes/puzzle_monster.ee972fe36906.png" ><figcaption class="d-inline align-middle">You're fighting this puzzle</figcaption></figure><form action="https://huntinality.com/puzzle_endpoint/wahgyu_stakes/move_form" method="POST" id="move_form" class="mb-3"><input type="hidden"><input type="text" name="move" required id="id_move"><input type="submit" value="Use Move"></form><div class="mb-2 text-center"><div id="move_response"></div></div></td></tr></tbody></table></div></div>
 <div class="it mt-4">
     As the first of the new Puzzle Hunter class, you might need to learn some moves from the original six classes to face off against this puzzling enemy.
 </div>
@@ -317,39 +319,10 @@ button.zoom {
 }
 
 </style>
-<script type="text/javascript">
-$("#move_form").on("submit", function(event){
-  event.preventDefault();
-  $.ajax({
-    url: $(this).attr("action"),
-    type: $(this).attr("method"),
-    data : $(this).serialize(),
-    success : function(json) {
-      $("#move_response").removeClass()
-      $("#move_response").empty()
-
-      if (json.success) {
-        $("#move_response").append(`<div>${json.response[0]}</div>`)
-        $("#move_response").append(`<div>${json.response[1]}`)
-        if (json.response[2].length > 0) {
-          $("#move_response").append(`<div class="monster_cries">${json.response[2]}</div></div>`)
-        }
-        if (json.response[3].length > 0) {
-          $("#move_response").append(`<div><img src="../static/puzzle_resources/wahgyu_stakes/hp.1134c984e497.gif" class="rem2"></img>${json.response[3]}</div>`)
-        }
-      } else {
-        $("#move_response").append(`<div class="text-danger">${json.response}</div>`)
-      }
-    },
-    error : function(xhr, errmsg, err) {
-      console.log(xhr.status + ": " + xhr.responseText);
-      $("#move_response").removeClass()
-      $("#move_response").addClass("text-danger")
-      $("#move_response").text("Error. Please email contact@huntinality.com if this issue persists.")
-    }
-  });
-});
+<script id="check_moves" type="text/javascript">
+  window.onload = move_checker_fn()
 </script>
+
     </div>
 </div>
 
