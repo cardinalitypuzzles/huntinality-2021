@@ -1152,7 +1152,7 @@ function checkAnswer(guess) {
   // We do this at the very end so that if someone goes back to the game
   // they can see the answer to the meta was correct (i.e. the save has already been updated).
   if (correct && correct.is_meta) {
-    window.location.href = '../victory';
+    window.location.href = '../victory.html';
     return;
   }
 }

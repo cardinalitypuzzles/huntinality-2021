@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Huntinality 2021</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <!-- Page specific imports -->
+  
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/base.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css">
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="static/js/sorttable.fe2a69aebf8c.js"></script>
+  <script src="static/js/tray.ac18af883297.js"></script>
+  <script src="static/js/bootstrap.7138c610defd.js"></script>
+  <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GRXJBTMVJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1GRXJBTMVJ');
+  </script>
+
+
+  <!-- Page specific imports -->
+  
+<style type="text/css">
+    @keyframes firework-animation {
+        0% { background-color : #460872; /* dark purple */ }
+        25% { background-color : #8b3de0; /* purple */ }
+        50% { background-color : #c4a1f8; /* lavender */ }
+        75% { background-color : #f9ff11; /* yellow */ }
+        100% { background-color : #460872; /* dark purple */ }
+    }
+    @-webkit-keyframes firework-animation {
+        0% { background-color : #460872; /* dark purple */ }
+        25% { background-color : #8b3de0; /* purple */ }
+        50% { background-color : #c4a1f8; /* lavender */ }
+        75% { background-color : #f9ff11; /* yellow */ }
+        100% { background-color : #460872; /* dark purple */ }
+    }
+    @keyframes firework-seed-animation {
+        0% { background-color : #460872; /* dark purple */ }
+        25% { background-color : #8b3de0; /* purple */ }
+        100% { background-color : #460872; /* dark purple */ }
+    }
+    @-webkit-keyframes firework-seed-animation {
+        0% { background-color : #460872; /* dark purple */ }
+        25% { background-color : #8b3de0; /* purple */ }
+        100% { background-color : #460872; /* dark purple */ }
+    }
+    @keyframes firework-fade-animation {
+        0% { opacity : 1; }
+        50% { opacity : 1; }
+        100% { opacity : 0; }
+    }
+    @-webkit-keyframes firework-fade-animation {
+        0% { opacity : 1; }
+        50% { opacity : 1; }
+        100% { opacity : 0; }
+    }
+    .fireWorkBatch {
+        z-index : 999;
+        position: absolute;
+        top : 0px;
+        left : 0px;
+        animation-name : firework-fade-animation;
+        animation-timing-function : cubic-bezier(0.5, 0, 1. 1);
+        animation-duration : 2.5s;
+    }
+    .fireWorkParticle {
+        z-index : 999;
+        position: absolute;
+        height : 5px;
+        width : 5px;
+        border-radius : 2.5px;
+        animation-name : firework-animation;
+        animation-timing-function : linear;
+        animation-duration : 1s;
+        animation-iteration-count : infinite;
+    }
+    .fireWorkSeed {
+        z-index : 999;
+        position: absolute;
+        height : 5px;
+        width : 5px;
+        border-radius : 5px;
+        animation-name : firework-seed-animation;
+        animation-timing-function : linear;
+        animation-duration : 0.5s;
+        animation-iteration-count : infinite;
+    }
+</style>
+
+
+
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="static/images/favicon.61e41ee0017b.ico" type="image/vnd.microsoft.icon">
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-4">
+    <div class="container-xxl">
+      <a class="navbar-brand" href="index.html">
+        <img src="static/images/logo.a854f7d77317.png" alt="Huntinality" class="max-vw-8 w-px-80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link"  href="about.html">
+              About
+            </a>
+          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link"  href="puzzle_story/obro.html">
+              Story
+              </a>
+          </li>
+          
+
+          
+            <li class="nav-item">
+              <a class="nav-link"  href="puzzles.html">
+              Puzzles
+              </a>
+            </li>
+          
+
+
+          <li class="nav-item">
+            <a class="nav-link"  href="teams.html">
+            Teams
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active"  href="updates.html">
+            Updates
+            </a>
+          </li>
+
+          
+            <li class="nav-item">
+              <a class="nav-link"  href="wrapup.html">
+              Wrap-Up
+              </a>
+            </li>
+          
+        </ul>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+            
+        </ul>
+
+      </div>
+
+
+    </div>
+  </nav>
+
+  <div class="container mt-2">
+    <div class="row mb-4">
+
+      <div class="col-auto me-auto">
+        
+      </div>
+
+      <div class="col-auto ms-auto">
+      
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="container main-container">
+    
+
+
+<div id="board"><div class="fireWorkBatch"></div><div class="fireWorkBatch"></div><div class="fireWorkBatch"></div><div class="fireWorkBatch"></div><div class="fireWorkBatch"></div><div class="fireWorkBatch"></div><div class="fireWorkBatch"></div></div>
+
+<h1>Congratulations!</h1>
+
+<div class="text-center">
+    <iframe class="my-3" width="560" height="315" src="https://www.youtube.com/embed/l65RFTVEoF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div>
+            Congratulations on completing Huntinality 2021. We would love to hear <a href="https://forms.gle/3ZQJbXgAxTpDBvBo9">your feedback on this hunt</a>. Thanks for participating!
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    var brd = document.getElementById("board");
+
+    seeds = [];
+    particles = [];
+
+    const fwkPtcIniV = 0.5;
+    const fwkSedIniV = 0.5;
+    const fwkPtcIniT = 2500;
+    const fwkSedIniT = 1000;
+    const a = 0.0005;
+    const g = 0.0005;
+    const v = 0.3;
+
+
+    function newFireworkParticle(x, y, angle)
+    {
+        var fwkPtc = document.createElement("div");
+        fwkPtc.setAttribute('class', 'fireWorkParticle');
+        fwkPtc.time = fwkPtcIniT;
+        while(angle > 360)
+            angle -= 360;
+        while(angle < 0)
+            angle += 360;
+        fwkPtc.velocity = [];
+        if(angle > 270)
+        {
+            fwkPtc.velocity.x = fwkPtcIniV * Math.sin(angle * Math.PI / 180) * (1 - Math.random() * v);
+            fwkPtc.velocity.y = fwkPtcIniV * Math.cos(angle * Math.PI / 180) * (1 - Math.random() * v);
+        }
+        else if(angle > 180)
+        {
+            fwkPtc.velocity.x = fwkPtcIniV * Math.sin(angle * Math.PI / 180) * (1 - Math.random() * v);
+            fwkPtc.velocity.y = fwkPtcIniV * Math.cos(angle * Math.PI / 180) * (1 - Math.random() * v);
+        }
+        else if(angle > 90)
+        {
+            fwkPtc.velocity.x = fwkPtcIniV * Math.sin(angle * Math.PI / 180) * (1 - Math.random() * v);
+            fwkPtc.velocity.y = fwkPtcIniV * Math.cos(angle * Math.PI / 180) * (1 - Math.random() * v);
+        }
+        else
+        {
+            fwkPtc.velocity.x = fwkPtcIniV * Math.sin(angle * Math.PI / 180) * (1 - Math.random() * v);
+            fwkPtc.velocity.y = fwkPtcIniV * Math.cos(angle * Math.PI / 180) * (1 - Math.random() * v);
+        }
+        fwkPtc.position = [];
+        fwkPtc.position.x = x;
+        fwkPtc.position.y = y;
+        fwkPtc.style.left = fwkPtc.position.x + 'px';
+        fwkPtc.style.top = fwkPtc.position.y + 'px';
+        if(particles == null)
+            particles = [];
+        particles.push(fwkPtc);
+        return fwkPtc;
+    }
+
+    function newFireworkSeed(x, y)
+    {
+        var fwkSed = document.createElement("div");
+        fwkSed.setAttribute('class', 'fireWorkSeed');
+        brd.appendChild(fwkSed);
+        fwkSed.time = fwkSedIniT;
+        fwkSed.velocity = [];
+        fwkSed.velocity.x = 0;
+        fwkSed.velocity.y = fwkSedIniV;
+        fwkSed.position = [];
+        fwkSed.position.x = x;
+        fwkSed.position.y = y;
+        fwkSed.style.left = fwkSed.position.x + 'px';
+        fwkSed.style.top = fwkSed.position.y + 'px';
+        if(seeds == null)
+            seeds = [];
+        seeds.push(fwkSed);
+        return fwkSed;
+    }
+
+    function newFireWorkStar(x, y)
+    {
+        var fwkBch = document.createElement("div");
+        fwkBch.setAttribute('class', 'fireWorkBatch');
+        var a = 0;
+        while(a < 360)
+        {
+            var fwkPtc = newFireworkParticle(x, y, a);
+            fwkBch.appendChild(fwkPtc);
+            a += 5;
+        }
+        brd.appendChild(fwkBch);
+    }
+
+    var before = Date.now();
+    var id = setInterval(frame, 5);
+
+    function frame()
+    {
+        var current = Date.now();
+        var deltaTime = current - before;
+        before = current;
+        for(i in seeds)
+        {
+            var fwkSed = seeds[i];
+            fwkSed.time -= deltaTime;
+            if(fwkSed.time > 0)
+            {
+                fwkSed.velocity.x -= fwkSed.velocity.x * a * deltaTime;
+                fwkSed.velocity.y -= g * deltaTime + fwkSed.velocity.y * a * deltaTime;
+                fwkSed.position.x += fwkSed.velocity.x * deltaTime;
+                fwkSed.position.y -= fwkSed.velocity.y * deltaTime;
+                fwkSed.style.left = fwkSed.position.x + 'px';
+                fwkSed.style.top = fwkSed.position.y + 'px';
+            }
+            else
+            {
+                newFireWorkStar(fwkSed.position.x, fwkSed.position.y);
+                fwkSed.parentNode.removeChild(fwkSed);
+                seeds.splice(i, 1);
+            }
+        }
+        for(i in particles)
+        {
+            var fwkPtc = particles[i];
+            fwkPtc.time -= deltaTime;
+            if(fwkPtc.time > 0)
+            {
+                fwkPtc.velocity.x -= fwkPtc.velocity.x * a * deltaTime;
+                fwkPtc.velocity.y -= g * deltaTime + fwkPtc.velocity.y * a * deltaTime;
+                fwkPtc.position.x += fwkPtc.velocity.x * deltaTime;
+                fwkPtc.position.y -= fwkPtc.velocity.y * deltaTime;
+                fwkPtc.style.left = fwkPtc.position.x + 'px';
+                fwkPtc.style.top = fwkPtc.position.y + 'px';
+            }
+            else
+            {
+                fwkPtc.parentNode.removeChild(fwkPtc);
+                particles.splice(i, 1);
+            }
+        }
+    }
+
+    $(window).on("load", launchFireworks);
+
+    function launchRandomFirework(offsetX, xRange) {
+        var x = offsetX + Math.random() * xRange;
+        var offsetY = document.getElementById("board").getBoundingClientRect().y;
+        var y = offsetY + Math.random() * window.outerHeight / 4;
+        setTimeout(function() { newFireworkSeed(x, y)} , Math.random() * 1000);
+    }
+
+    function launchFireworks(event)
+    {
+        var times = 7;
+        var width = document.body.offsetWidth / (times + 2);
+        for (var i = 0; i < times; i++) {
+            launchRandomFirework((i + 1) * width, width);
+        }
+    }
+
+</script>
+
+
+
+
+  </div>
+
+  
+
+
+</body></html>
