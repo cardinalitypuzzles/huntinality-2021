@@ -24,7 +24,7 @@ window.onload = function () {
     el: '#ui',
     template: `<div>
     <audio id="background-audio" loop muted="muted">
-      <source src="/static/puzzle_resources/wah_street_bets/audio/smash.mp3" type="audio/mp3">
+      <source src="../static/puzzle_resources/wah_street_bets/audio/smash.mp3" type="audio/mp3">
     </audio>
     <div id="notification-area"></div>
     <div style="min-height: 60px;"></div>
@@ -419,12 +419,12 @@ function spawnClickable() {
   if (char === '.') {
     height = 200;
     width = 200;
-    src = '/static/puzzle_resources/wah_street_bets/images/wariocoin.png';
+    src = '../static/puzzle_resources/wah_street_bets/images/wariocoin.png';
   }
   if (char === '-') {
     height = 100;
     width = 300;
-    src = '/static/puzzle_resources/wah_street_bets/images/question_blocks.png';
+    src = '../static/puzzle_resources/wah_street_bets/images/question_blocks.png';
   }
   //let e = document.createElement('div');
   let e = document.createElement('img');
@@ -438,7 +438,7 @@ function spawnClickable() {
   let creationTime = Date.now();
   let clicked = false;
   e.onmousedown = function () {
-    var audio = new Audio('/static/puzzle_resources/wah_street_bets/audio/coin_sound.wav');
+    var audio = new Audio('../static/puzzle_resources/wah_street_bets/audio/coin_sound.wav');
     audio.play();
     achievementClickUpdate(id);
     let bonus = clickableBonus();
@@ -2248,7 +2248,7 @@ Vue.component('puzzles', {
               <p class="card-text justify-content-center">
                 <span v-if="unlockedPuzzles[i-1].flavortext" v-html="unlockedPuzzles[i - 1].flavortext"></span>
                 <img v-if="unlockedPuzzles[i-1].is_meta" class="w-75 pb-5"
-                src="/static/puzzle_resources/wah_street_bets/images/aBAUyb0U6y.png">
+                src="../static/puzzle_resources/wah_street_bets/images/aBAUyb0U6y.20d72da5b600.png">
               </p>
             </div>
           </div>
